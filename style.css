@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo&display=swap');
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+}
+::placeholder {
+  color: white;
+}
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: url("icons/28855-sky-city.jpg");
+  background-size: 1920px 1080px;
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  font-family: 'Heebo', sans-serif;
+}
+.container {
+  height: 400px;
+  width: 1100px;
+  position: absolute;
+  top: 100px;
+}
+.search {
+  width: 100%;
+  height: 50px;
+}
+.search button {
+  position: absolute;
+  right: 4px;
+  top: 3px;
+  width: 110px;
+  height: 44px;
+  border-radius: 20px;
+  border: none;
+}
+#search {
+  background-color: #1e202b;
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  padding-left: 20px;
+  color: white;
+}
+#search:focus {
+  outline: 0;
+  border: 1px solid green;
+}
+.search button:focus {
+  outline: 0;
+  border: 1px solid green;
+}
+.information {
+  background-color: rgba(36, 38, 50, 0.88);
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-size: 0;
+  color: white;
+  border-radius: 10px;
+}
+.today {
+  background-color: rgba(36, 38, 50, 0.7);
+  height: 40px;
+  display: flex;
+  width: 35%;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-radius: 10px 0 0 0;
+  position: relative
+}
+.datum {
+  display: flex;
+  width: 65px;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+}
+.todayValue {
+  height: 260px;
+  display: inline-block;
+  width: 35%;
+  font-size: 16px;
+  padding-left: 10px
+}
+.day {
+  background-color: rgba(36, 38, 50, 0.7);
+  height: 40px;
+  display: inline-block;
+  width: 13%;
+  font-size: 14px;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: 100;
+}
+.days {
+  display: flex;
+  color: #bfc1c8;
+}
+.day6 {
+  border-radius: 0 10px 0 0;
+}
+.day26 {
+  border-radius: 0 0 10px 0;
+}
+.darkerArea {
+  background-color: rgba(36, 38, 50, 0.85);
+}
+.darkArea {
+  background-color: rgba(36, 38, 50, 0.55);
+}
+.dayValue {
+  height: 260px;
+  display: flex;
+  width: 13%;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.dayValue div img {
+  padding-bottom: 40px;
+}
+.tempMax {
+  font-size: 23px;
+  font-weight: 700;
+  color: white;
+}
+.tempMin {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 15px
+}
+
+.otherDays {
+  display: flex;
+  color: #bfc1c8;
+}
+.city {
+  height: 20px;
+  margin-top: 20px;
+
+}
+.city span {
+  border-bottom: 1px solid;
+  padding-left: 5px;
+  padding-right: 15px;
+}
+.temperatureToday {
+  height: 80px;
+  margin-top: 30px;
+  font-size: 80px;
+  display: inline-block;
+  font-weight: 700;
+  color: white;
+}
+.todayWeatherImage {
+  display: inline-block;
+  padding-left: 20px;
+}
+.todayWeatherImage img {
+  height: 60px;
+}
+.todayOtherData {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 25px;
+}
+.todayOtherData img {
+  height: 30px;
+  margin-left: 10px;
+}
+.todayOtherData > * {
+  margin-right: 3px;
+}
+.localTime {
+  display: block;
+  position: absolute;
+  left: 250px;
+  font-size: 35px;
+  font-weight: 700;
+  top: 70px;
+}
+.dot {
+  display: inline-block;
+  animation-name: ticking;
+  animation-duration: 1s;;
+  animation-iteration-count: infinite;
+}
+@keyframes ticking {
+  0% {color: inherit}
+  5% {color: transparent}
+  50% {color: transparent}
+  55% {color: inherit}
+  100% {color: inherit}
+}
+.warning {
+  background-color: rgba(36, 38, 50, 0.7);
+  height: 70px;
+  width: 550px;
+  position: absolute;
+  top: 420px;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  padding-left: 15px;
+  display: none;
+  transform: translateX(50%);
+}

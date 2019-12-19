@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Weather station</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="search">
+        <input type="text" placeholder="Find your location ..." id="search">
+        <button id="findButton">Find</button>
+      </div>
+      
+      <div class="information">
+        <div class="days">
+          <div class="today">
+            <span>Monday</span>
+            <span class="datum">Date</span>
+          </div>
+          <div class="day2 day darkerArea">
+          </div>
+          <div class="day3 day">
+          </div>
+          <div class="day4 day darkerArea">
+          </div>
+          <div class="day5 day">
+          </div>
+          <div class="day6 day darkerArea">
+          </div>
+        </div>
+        
+        <div class="otherDays">
+          <div class="todayValue">
+            <div class="city"><span>---</span></div>
+            <div class="localTime">14 <div class="dot">:</div> 15 </div>
+            <div class="temperatureToday"><span>--</span>°C</div>
+            <div class="todayWeatherImage"></div>
+            <div class="todayOtherData">
+              <img src="https://demo.themezy.com/system/resources/demo_themes/000/000/128//images/icon-umberella.png">
+              <div class="humidity"><span>--</span> %</div>
+              <img src="https://demo.themezy.com/system/resources/demo_themes/000/000/128//images/icon-wind.png">
+              <div class="windSpeed"><span>--</span> km/h</div>
+              <img src="https://cdn2.iconfinder.com/data/icons/weather-forecast-line/24/Barometer-512.png">
+              <div class="pressure"><span>--</span> mbar</div>
+            </div>
+          </div>
+          <div class="day22 dayValue darkArea">
+            
+          </div>
+          <div class="day23 dayValue">
+            
+          </div>
+          <div class="day24 dayValue darkArea">
+            
+          </div>
+          <div class="day25 dayValue">
+            
+          </div>
+          <div class="day26 dayValue darkArea">
+            
+          </div>
+        </div>
+      </div>
+      <div class="warning">
+        
+      </div>
+    </div>
+  </body>
+</html>
